@@ -15,14 +15,13 @@ const data = [
   ["NITRP", "Educational", "Kick", "12 Hour Ban", "72 Hour Ban"],
   ["No Microphone", "Educational", "Kick", "-", "-"],
   ["Priority Status Breach", "Educational", "Kick", "12 Hour Ban", "24 Hour Ban"],
-  ["RDM", "Kick", "12 Hour Ban", "24 Hour Ban", "72 Hour Ban"],
+  ["RDM & VDM", "Kick", "12 Hour Ban", "24 Hour Ban", "72 Hour Ban"],
   ["Restricted Civ RP", "Educational", "Kick", "12 Hour Ban", "24 Hour Ban"],
   ["Sexual Remarks / Comments", "Warning", "PERM BAN (if repeated)", "-", "-"],
   ["Specialist Scenes", "Educational", "Kick", "12 Hour Ban", "24 Hour Ban"],
   ["Staff Impersonation", "24 Hour Ban", "PERM BAN", "-", "-"],
   ["Toxic Behaviour", "Kick", "24 Hour Ban", "72 Hour Ban", "3SP Initiation"],
   ["Trolling", "Warning", "12 Hour Ban", "24 Hour Ban", "72 Hour Ban"],
-  ["VDM", "Kick", "12 Hour Ban", "24 Hour Ban", "72 Hour Ban"],
   ["Vulgar Language", "Warning", "24 Hour Ban", "72 Hour Ban", "1 Week Ban / PERM"],
 ];
 
@@ -46,5 +45,6 @@ document.getElementById("searchInput").addEventListener("input", function () {
     row.style.display = text.includes(filter) ? "" : "none";
   });
 });
+
 
 
