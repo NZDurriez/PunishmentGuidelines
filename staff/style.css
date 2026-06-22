@@ -74,21 +74,47 @@ thead th {
 }
 
 .col1 {
-  background-color: #2f4f2f;
+  background-color: #2f7d32;
   color: #fff;
   width: 150px;
 }
 
 .col2 {
-  background-color: #666600;
+  background-color: #b3a300;
   color: #fff;
   width: 150px;
 }
 
-.col3, .col4, .col5 {
-  background-color: #661111;
+.col3 {
+  background-color: #d9822b;
   color: #fff;
   width: 150px;
+}
+
+.col4 {
+  background-color: #a34d12;
+  color: #fff;
+  width: 150px;
+}
+
+.col5 {
+  background-color: #b71c1c;
+  color: #fff;
+  width: 150px;
+}
+
+.reset-col {
+  background-color: #2b2b2b;
+  color: #fff;
+  width: 150px;
+}
+
+.split-left {
+  border-left: 14px solid #1e1e1e !important;
+}
+
+#punishmentTable td:nth-child(7) {
+  border-left: 14px solid #1e1e1e;
 }
 
 .notes-col {

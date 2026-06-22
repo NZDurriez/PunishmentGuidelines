@@ -1,28 +1,30 @@
 const data = [
-  ["3SP|3 Strike Polcy", "1 Day Ban", "3 Day Ban", "PERM BAN","-"],
-  ["Abuse of OOC", "Warning", "Kick", "12 Hour Ban", "72 Hour Ban"],
-  ["Combat Logging", "Warning", "2 Hour Ban", "12 Hour Ban", "72 Hour Ban"],
-  ["Cop Baiting", "Educational", "Kick", "12 Hour Ban", "72 Hour Ban"],
-  ["Exploiting", "72hr Ban", "PERM BAN (if intent proven)", "-", "-"],
-  ["Fail Roleplay", "Educational", "2 Hour Ban", "12 Hour Ban", "3SP Initiation"],
-  ["Fail to Follow Staff Direction", "Warning", "24 Hour Ban", "72 Hour Ban", "1 Week Ban"],
-  ["Forced RP / Interjection", "Educational", "Kick", "2 Hour Ban", "24 Hour Ban"],
-  ["Greenzone Breach", "Educational", "Kick", "2 Hour Ban", "24 Hour Ban"],
-  ["GTA Driving", "Educational", "Kick", "2 Hour Ban", "24 Hour Ban"],
-  ["Hacking / Modding", "PERM BAN (appealable)", "-", "-", "-"],
-  ["Harassment", "Warning", "12 Hour Ban", "72 Hour Ban", "PERM BAN"],
-  ["Meta Gaming", "Educational", "12 Hour Ban", "72 Hour Ban", "PERM BAN"],
-  ["NITRP", "Educational", "Kick", "12 Hour Ban", "72 Hour Ban"],
-  ["No Microphone", "Educational", "Kick", "-", "-"],
-  ["Priority Status Breach", "Educational", "Kick", "12 Hour Ban", "24 Hour Ban"],
-  ["RDM & VDM", "Kick", "12 Hour Ban", "24 Hour Ban", "72 Hour Ban"],
-  ["Restricted Civ RP", "Educational", "Kick", "12 Hour Ban", "24 Hour Ban"],
-  ["Sexual Remarks / Comments", "Warning", "PERM BAN (if repeated)", "-", "-"],
-  ["Specialist Scenes", "Educational", "Kick", "12 Hour Ban", "24 Hour Ban"],
-  ["Staff Impersonation", "24 Hour Ban", "PERM BAN", "-", "-"],
-  ["Toxic Behaviour", "Kick", "24 Hour Ban", "72 Hour Ban", "3SP Initiation"],
-  ["Trolling", "Warning", "12 Hour Ban", "24 Hour Ban", "72 Hour Ban"],
-  ["Vulgar Language", "Warning", "24 Hour Ban", "72 Hour Ban", "1 Week Ban / PERM"],
+  ["Abuse of OOC", "Kick", "Kick", "12 Hour Ban", "72 Hour Ban", "Initiate 3SP"],
+  ["Combat Logging", "Educational + Warning", "2 Hour Ban", "12 Hour Ban", "72 Hour Ban", "Initiate 3SP"],
+  ["Cop Baiting", "Kick", "Kick", "12 Hour Ban", "72 Hour Ban", "Initiate 3SP"],
+  ["Exploiting", "72hr Ban", "PERM BAN (if intent proven)", "", "", ""],
+  ["Fail Roleplay", "Educational + Warning", "6 Hour Ban", "12 Hour Ban", "Initiate 3SP", ""],
+  ["Fail to Follow Staff", "Warning", "24 Hour Ban", "72 Hour Ban", "Initiate 3SP", ""],
+  ["Forced RP / Interjection", "Educational + Warning", "6 Hour Ban", "12 Hour Ban", "24 Hour Ban", "Initiate 3SP"],
+  ["Greenzone Breach", "Kick", "6 Hour Ban", "12 Hour Ban", "24 Hour Ban", "Initiate 3SP"],
+  ["GTA Driving", "Kick", "6 Hour Ban", "12 Hour Ban", "24 Hour Ban", "Initiate 3SP"],
+  ["Hacking / Modding", "PERM BAN (appealable)", "", "", "", ""],
+  ["Harassment", "Kick", "12 Hour Ban", "72 Hour Ban", "PERM BAN", ""],
+  ["Meta Gaming", "Kick", "12 Hour Ban", "72 Hour Ban", "PERM BAN", ""],
+  ["NITRP", "Kick", "Kick", "12 Hour Ban", "72 Hour Ban", "Initiate 3SP"],
+  ["No Microphone", "Educational", "Kick", "72 Hour Ban", "PERM BAN", ""],
+  ["Out of Character Breach", "Educational + Warning", "Kick", "12 Hour Ban", "72 Hour Ban", "Initiate 3SP"],
+  ["Priority Status Breach", "Educational", "Kick", "12 Hour Ban", "24 Hour Ban", "Initiate 3SP"],
+  ["RDM", "Kick", "12 Hour Ban", "24 Hour Ban", "72 Hour Ban", "Initiate 3SP"],
+  ["Restricted Civ RP", "Educational", "Kick", "12 Hour Ban", "24 Hour Ban", "Initiate 3SP"],
+  ["Service Conduct Breach", "Educational + Warning", "24 Hour Ban", "72 Hour Ban", "Initiate 3SP", ""],
+  ["Sexual Remarks / Comments", "Warning", "72 Hour Ban", "PERM BAN (if repeated)", "", ""],
+  ["Specialist Scenes", "Educational", "Kick", "12 Hour Ban", "24 Hour Ban", "Initiate 3SP"],
+  ["Staff Impersonation", "24 Hour Ban", "PERM BAN", "", "", ""],
+  ["Toxic Behaviour", "Kick", "24 Hour Ban", "72 Hour Ban", "Initiate 3SP", ""],
+  ["Trolling", "12 Hour Ban", "24 Hour Ban", "72 Hour Ban", "Initiate 3SP", ""],
+  ["VDM", "Kick", "12 Hour Ban", "24 Hour Ban", "72 Hour Ban", "Initiate 3SP"],
+  ["Vulgar Language", "Kick", "24 Hour Ban", "72 Hour Ban", "1 Week Ban / PERM", ""]
 ];
 
 const tbody = document.querySelector("#punishmentTable tbody");
@@ -45,6 +47,5 @@ document.getElementById("searchInput").addEventListener("input", function () {
     row.style.display = text.includes(filter) ? "" : "none";
   });
 });
-
 
 
